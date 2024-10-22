@@ -1,22 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cookie Clicker</title>
+    <title>Cookie Clicker Multiplayer</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Cookie Clicker 🍪</h1>
-        <div id="cookie-count">Cookies: 0</div>
-        <button id="click-button">Click Me! 🍪</button>
-        <div id="upgrades">
-            <h2>Upgrades</h2>
-            <div id="upgrade-list"></div>
+    <div class="game-container">
+        <div class="left-panel">
+            <h1>Cookies: <span id="cookie-count">0</span></h1>
+            <img src="cookie.png" id="cookie-click" alt="Cookie" class="cookie">
         </div>
-        <button id="reset-button" style="display: none;">Reset Game</button>
+
+        <div class="right-panel">
+            <h2>Speciale Upgrades</h2>
+            <div id="special-upgrades">
+                <button class="upgrade-btn" data-cost="25000" id="special1">Boost Autoclickers x2 (Kosten: 25,000)</button>
+                <button class="upgrade-btn" data-cost="30000" id="special2">Boost Autoclickers x4 (Kosten: 30,000)</button>
+                <button class="upgrade-btn" data-cost="35000" id="special3">Boost Autoclickers x6 (Kosten: 35,000)</button>
+                <button class="upgrade-btn" data-cost="40000" id="special4">Boost Autoclickers x8 (Kosten: 40,000)</button>
+                <button class="upgrade-btn" data-cost="55000" id="special5">Boost Autoclickers x10 (Kosten: 55,000)</button>
+                <button class="upgrade-btn" data-cost="55000" id="special6">Speciale PNG voor 30 sec (Kosten: 55,000)</button>
+                <button class="upgrade-btn" data-cost="100000" id="special7">Prank! Alle voortgang weg (Kosten: 100,000)</button>
+                <button class="upgrade-btn" data-cost="150000" id="special8">Alles dropt voor 30 sec (Kosten: 150,000)</button>
+                <button class="upgrade-btn" data-cost="200000" id="special9">Cookie verdwijnt voor 2 min (Kosten: 200,000)</button>
+                <button class="upgrade-btn" data-cost="250000" id="special10">Klik-knop werkt niet voor 60 sec (Kosten: 250,000)</button>
+            </div>
+
+            <h2>Normale Upgrades</h2>
+            <div id="normal-upgrades">
+                <button class="upgrade-btn" data-cost="1000" id="clicker1">Autoclicker x10 (Kosten: 1,000)</button>
+                <button class="upgrade-btn" data-cost="1500" id="clicker2">Autoclicker x15 (Kosten: 1,500)</button>
+                <button class="upgrade-btn" data-cost="2000" id="clicker3">Autoclicker x20 (Kosten: 2,000)</button>
+                <button class="upgrade-btn" data-cost="2500" id="clicker4">Autoclicker x25 (Kosten: 2,500)</button>
+                <button class="upgrade-btn" data-cost="3000" id="clicker5">Autoclicker x30 (Kosten: 3,000)</button>
+                <button class="upgrade-btn" data-cost="3500" id="clicker6">Autoclicker x35 (Kosten: 3,500)</button>
+                <button class="upgrade-btn" data-cost="4000" id="clicker7">Autoclicker x40 (Kosten: 4,000)</button>
+                <button class="upgrade-btn" data-cost="4500" id="clicker8">Autoclicker x45 (Kosten: 4,500)</button>
+            </div>
+
+                <h2>Thema's</h2>
+                <div id="themes">
+                    <button class="theme-btn" data-cost="10000" id="purple-theme">Paarse Thema (Kosten: 10,000)</button>
+                    <button class="theme-btn" data-cost="20000" id="green-theme">Groene Thema (Kosten: 20,000)</button>
+                    <button class="theme-btn" data-cost="35000" id="black-theme">Zwarte Thema (Kosten: 35,000)</button>
+                    <button class="theme-btn" data-cost="40000" id="pink-theme">Roze Thema (Kosten: 40,000)</button>
+                    <button class="theme-btn" data-cost="45000" id="aqua-theme">Aqua Blauw Thema (Kosten: 45,000)</button>
+                    <button class="theme-btn" data-cost="50000" id="lightgreen-theme">Lichtgroen Thema (Kosten: 50,000)</button>
+                    <button class="theme-btn" data-cost="55000" id="yellow-theme">Geel Thema (Kosten: 55,000)</button>
+                </div>
+
+            <button id="multiplayer-btn">Multiplayer</button>
+        </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>

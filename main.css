@@ -1,44 +1,56 @@
 body {
-    background-color: #9b59b6; /* Purple background */
-    color: white;
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: red;
+    margin: 0;
+    padding: 0;
+}
+
+.game-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-panel {
+    flex: 1;
     text-align: center;
-    padding: 20px;
 }
 
-.container {
-    max-width: 600px;
-    margin: auto;
-    border: 2px solid white;
+.right-panel {
+    flex: 1;
     padding: 20px;
+    background-color: lightgray;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
 }
 
-button {
-    font-size: 24px;
-    padding: 10px 20px;
-    background-color: #8e44ad; /* Darker purple */
-    color: white;
-    border: none;
-    border-radius: 5px;
+.cookie {
+    width: 200px;
+    height: 200px;
     cursor: pointer;
-    margin: 10px;
 }
 
-button:hover {
-    background-color: #732d91; /* Even darker purple */
-}
-
-.upgrade {
-    margin: 10px 0;
-}
-
-.upgrade button {
-    background-color: #e74c3c; /* Red for upgrade buttons */
-}
-
-#reset-button {
+.upgrade-btn, .theme-btn, #multiplayer-btn {
     display: block;
-    margin: 20px auto;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid red;
+    color: red;
+}
+
+.upgrade-btn:hover, .theme-btn:hover, #multiplayer-btn:hover {
+    background-color: red;
+    color: white;
+}
+
+.upgrade-bought {
+    background-color: green;
+    color: white;
+}
+
+#cookie-count {
+    font-size: 24px;
 }
