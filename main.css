@@ -1,56 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: white;
-    color: red;
-    margin: 0;
-    padding: 0;
-}
-
-.game-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.left-panel {
-    flex: 1;
+    background-color: #f0f0f0;
     text-align: center;
 }
 
-.right-panel {
-    flex: 1;
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
     padding: 20px;
-    background-color: lightgray;
-    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
-.cookie {
-    width: 200px;
-    height: 200px;
-    cursor: pointer;
-}
-
-.upgrade-btn, .theme-btn, #multiplayer-btn {
-    display: block;
-    margin: 10px 0;
-    padding: 10px;
+button {
+    margin: 10px;
+    padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: white;
-    border: 2px solid red;
-    color: red;
 }
 
-.upgrade-btn:hover, .theme-btn:hover, #multiplayer-btn:hover {
-    background-color: red;
-    color: white;
+.flex-container {
+    display: flex; /* Flexbox inschakelen */
+    justify-content: space-between; /* Ruimte tussen de elementen */
+    align-items: flex-start; /* Bovenkant uitlijnen */
 }
 
-.upgrade-bought {
-    background-color: green;
-    color: white;
+.left-container {
+    flex: 1; /* Laat de linkercontainer flexibel zijn */
+    text-align: left; /* Tekst links uitlijnen */
 }
 
-#cookie-count {
-    font-size: 24px;
+.right-container {
+    flex: 1; /* Laat de rechtercontainer ook flexibel zijn */
+    text-align: right; /* Tekst rechts uitlijnen */
+}
+
+button.upgrade-btn, button.auto-upgrade-btn, button.theme-btn {
+    width: 150px;
+    margin: 5px;
+}
+
+.section {
+    margin-top: 20px;
+}
+
+h1, h2 {
+    color: #333;
 }
